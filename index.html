@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Changelog markdown converter</title>
+        <style>
+            table
+            {
+                width: 1200px;
+                margin: auto;
+            }
+            td
+            {
+                padding-top: 10px;
+                padding-bottom: 10px;
+                text-align: center;
+            }
+            textarea
+            {
+                margin-left: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <form>
+            <table>
+                <tr>
+                    <td>Change log:</td>
+                    <td><textarea id="origin" rows="10" cols="140"></textarea></td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align: left"><input type="button" id="go" value="go"/></td>
+                </tr>
+                <tr>
+                    <td>Markdown:</td>
+                    <td><textarea id="destination" rows="20" cols="140" readonly></textarea></td>
+                </tr>
+            </table>
+        </form>
+        <script>
+            var input = document.getElementById("origin");
+            var output = document.getElementById("destination");
+            var convert = function () {
+                output.value = input.value.replace(/[ ]{8}/g, "").replace(/[ ]{4}/g, "#### ");
+            }
+            document.getElementById("go").addEventListener("click", convert);
+        </script>
+    </body>
+</html>
