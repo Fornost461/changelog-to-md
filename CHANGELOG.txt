@@ -3,6 +3,5 @@
 # This project adheres to [Semantic Versioning](http://semver.org/).
 
 1.0.0 (2016-05-26)
-
     added:
         - ability to convert a changelog entry into Markdown.
