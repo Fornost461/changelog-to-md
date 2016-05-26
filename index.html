@@ -47,6 +47,10 @@
                 clearTimeout(timeoutID);
                 timeoutID = setTimeout(convert, 100);
             });
+
+            output.addEventListener("focus", function() {
+                output.select();
+            });
         </script>
     </body>
 </html>
