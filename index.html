@@ -29,9 +29,6 @@
                     <td><textarea id="origin" rows="10" cols="140"></textarea></td>
                 </tr>
                 <tr>
-                    <td colspan="2" style="text-align: left"><input type="button" id="go" value="go"/></td>
-                </tr>
-                <tr>
                     <td>Markdown:</td>
                     <td><textarea id="destination" rows="20" cols="140" readonly></textarea></td>
                 </tr>
@@ -40,10 +37,16 @@
         <script>
             var input = document.getElementById("origin");
             var output = document.getElementById("destination");
+            var timeoutID;
+
             var convert = function () {
                 output.value = input.value.replace(/[ ]{8}/g, "").replace(/[ ]{4}/g, "#### ");
             }
-            document.getElementById("go").addEventListener("click", convert);
+
+            input.addEventListener("input", function() {
+                clearTimeout(timeoutID);
+                timeoutID = setTimeout(convert, 100);
+            });
         </script>
     </body>
 </html>
