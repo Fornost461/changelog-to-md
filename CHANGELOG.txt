@@ -4,7 +4,7 @@
 
 1.3.0 (2016-07-16)
     added:
-        - ability to handle nested lists (on one level)
+        - support for nested lists (on one level)
 
 1.2.2 (2016-07-13)
     fixed:
