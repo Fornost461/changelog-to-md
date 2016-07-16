@@ -8,23 +8,23 @@
 
 1.2.2 (2016-07-13)
     fixed:
-        - grammar in Read Me.
+        - grammar in Read Me
 
 1.2.1 (2016-07-12)
     fixed:
-        - grammar in Read Me.
+        - grammar in Read Me
 
 1.2.0 (2016-05-27)
     added:
-        - Result autoselection when on focus.
+        - result autoselection when on focus
 
 1.1.0 (2016-05-27)
     added:
-        - Automatic update when typing.
+        - automatic update when typing
 
     removed:
         - “go” button.
 
 1.0.0 (2016-05-26)
     added:
-        - Ability to convert a changelog entry into Markdown.
+        - ability to convert a changelog entry into Markdown
