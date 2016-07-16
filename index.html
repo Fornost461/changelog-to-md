@@ -40,7 +40,7 @@
             var timeoutID;
 
             var convert = function () {
-                output.value = input.value.replace(/[ ]{8}/g, "").replace(/[ ]{4}/g, "#### ");
+                output.value = input.value.replace(/[ ]{12}/g, "  ").replace(/[ ]{8}/g, "").replace(/[ ]{4}/g, "#### ");
             }
 
             input.addEventListener("input", function() {
